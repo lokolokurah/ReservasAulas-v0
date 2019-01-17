@@ -25,12 +25,12 @@ public class Permanencia
         setTramo(tramo);
     }
     
-    public Permanencia(Permanencia p) {
-		if(p==null) {
+    public Permanencia(Permanencia permanencia) {
+		if(permanencia==null) {
 			throw new IllegalArgumentException("No se puede copiar una permanencia nula.");
                 }
-		setDia(p.getDia());
-		setTramo(p.getTramo());
+		setDia(permanencia.getDia());
+		setTramo(permanencia.getTramo());
 	}
 
     public LocalDate getDia() {
@@ -89,7 +89,7 @@ public class Permanencia
     @Override
     public String toString() {
         // "[dia=01/12/2018, tramo=Mañana]"
-        return "[dia=" + getDia().format(FORMATO_DIA) + ", tramo=" + getTramo() + "]";
+        return "[dia="+getDia().format(FORMATO_DIA)+", tramo="+getTramo()+"]";
     }
     
     
