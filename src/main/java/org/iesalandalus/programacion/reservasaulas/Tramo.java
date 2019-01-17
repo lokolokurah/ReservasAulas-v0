@@ -11,5 +11,21 @@ package org.iesalandalus.programacion.reservasaulas;
  */
 public enum Tramo 
 {
-    MANADA, TARDE
+    MANANA("Mañana"), // Añadidos Strings por defecto del test
+    TARDE("Tarde");
+    private String cadenaAMostrar;
+
+    //Implementado constructor por defecto
+    private Tramo(String cadenaAMostrar) {
+        this.cadenaAMostrar = cadenaAMostrar;
+    }
+
+    @Override
+    public String toString() {
+        return cadenaAMostrar;
+    }
+
+    
+    
+    
 }
