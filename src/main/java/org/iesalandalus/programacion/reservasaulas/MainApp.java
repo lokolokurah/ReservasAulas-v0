@@ -6,5 +6,4 @@ public class MainApp {
         {
 		System.out.println("Programa para la gestión de reservas de espacios del IES Al-Ándalus");
 	}
-
 }

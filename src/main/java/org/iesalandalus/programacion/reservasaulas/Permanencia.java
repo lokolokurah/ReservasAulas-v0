@@ -91,11 +91,4 @@ public class Permanencia
         // "[dia=01/12/2018, tramo=Mañana]"
         return "[dia="+getDia().format(FORMATO_DIA)+", tramo="+getTramo()+"]";
     }
-    
-    
-
-    
-    
-    
-    
 }
