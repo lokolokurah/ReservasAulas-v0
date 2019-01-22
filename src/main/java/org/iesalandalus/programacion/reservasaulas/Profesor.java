@@ -111,10 +111,6 @@ public class Profesor
         return hash;
     }
 
-    
-
-    
-
     @Override
     public String toString() {
         if(getTelefono()==null)
