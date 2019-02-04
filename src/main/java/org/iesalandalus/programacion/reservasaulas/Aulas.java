@@ -32,10 +32,10 @@ public class Aulas
     }
     
     private Aula[] copiaProfundaAulas(Aula[] coleccionAulas) {
-        Aula[] copia = new Aula[MAX_AULAS];
-        for(int i = 0; i<copia.length && coleccionAulas[i]!=null; i++)
-            copia[i] = new Aula(coleccionAulas[i]);
-        return copia;
+        Aula[] replica=new Aula[MAX_AULAS];
+        for(int i = 0; i<replica.length && coleccionAulas[i]!=null; i++)
+            replica[i] = new Aula(coleccionAulas[i]);
+        return replica;
     }
 
     public Aula[] getAulas() {

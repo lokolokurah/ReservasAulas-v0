@@ -25,12 +25,12 @@ public class Permanencia
         setTramo(tramo);
     }
     
-    public Permanencia(Permanencia permanencia) {
-		if(permanencia==null) {
-			throw new IllegalArgumentException("No se puede copiar una permanencia nula.");
-                }
-		setDia(permanencia.getDia());
-		setTramo(permanencia.getTramo());
+    public Permanencia(Permanencia permanencia) {     
+	if(permanencia==null) {
+		throw new IllegalArgumentException("No se puede copiar una permanencia nula.");
+        }
+	setDia(permanencia.getDia());
+	setTramo(permanencia.getTramo());
 	}
 
     public LocalDate getDia() {
@@ -54,8 +54,6 @@ public class Permanencia
         }
         this.tramo = tramo;
     }
-
-   
 
     @Override
     public boolean equals(Object obj) {
